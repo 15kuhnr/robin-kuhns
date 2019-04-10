@@ -22,7 +22,7 @@
   }
 
   #map {
-    height: 20%;
+    height: 45%;
   }
 
   html, body {
@@ -209,11 +209,75 @@
 
 
 
-<h1><center>Home Page</center></h1>
+<h1><center>Adventures</center></h1>
 
-<center><h4 style="color:#0F0F0F;font-family: Arial;font-size=20pt">Welcome to my website</h4></center>
+<center><h4 style="color:#0F0F0F;font-family: Arial;font-size=20pt">A documentation of some of my favorite outings around North America</h4></center>
 
-<center><p style="color:#0F0F0F;font-family: Arial;">I am currently teaching myself html, this page will be undergoing lots of changes, apologies for the inconvenience.</p></center>
+<div id="map"></div>
+<script>
+var map;
+function initMap() {
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 36.64, lng: -93.32},
+    zoom: 3
+  });
+
+  var marker = new google.maps.Marker({
+  position: {lat: 44.39, lng: -71.46},
+  map: map,
+  title: 'East Mountain Radar Base'
+  });
+  var marker = new google.maps.Marker({
+  position: {lat: 21.121, lng: -86.989},
+  map: map,
+  title: 'Abandoned Resort'
+  });
+  var marker = new google.maps.Marker({
+  position: {lat: 40.9, lng: -106.5},
+  map: map,
+  title: 'Yampa River Trip'
+  });
+  var marker = new google.maps.Marker({
+  position: {lat: 43.28, lng: -110.5},
+  map: map,
+  title: 'Hoback Shield'
+  });
+  var marker = new google.maps.Marker({
+  position: {lat: 33.68, lng: -111.81},
+  map: map,
+  title: 'Hanging Gardens'
+  });
+  var marker = new google.maps.Marker({
+  position: {lat: 44.33, lng: -70.33},
+  map: map,
+  title: 'Abandoned Goldmine'
+  });
+  var marker = new google.maps.Marker({
+  position: {lat: 43.63, lng: -74.19},
+  map: map,
+  title: 'Abandoned Industrial Lot'
+  });
+  var marker = new google.maps.Marker({
+  position: {lat: 44.43, lng: -70.55},
+  map: map,
+  title: 'Shag Crag'
+  });
+  var marker = new google.maps.Marker({
+  position: {lat: 44.19, lng: -72.53},
+  map: map,
+  title: "Camel's Hump"
+  });
+
+
+
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEfrHieCBUE4fYdDb9Sd_xOqKmsvIi7iQ&callback=initMap"
+async defer></script>
+
+
+<center><p style="color:#0F0F0F;font-family: Arial;font-size:7pt;">This is not a complete list</p></center>
 
 <div class="footer">
   <center>

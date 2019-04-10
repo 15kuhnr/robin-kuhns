@@ -18,17 +18,17 @@
   }
 
   p {
-    max-width: 600px;
+    max-width: 800px;
   }
 
   #map {
-    height: 20%;
+    height: 25%;
   }
-
   html, body {
     height: 100%;
     margin: 0;
     padding-top: 0%;
+    padding-bottom: 200px;
     font-family: Arial, Helvetica, sans-serif;
     background-color:#F7F7F7;
     z-index: 0;
@@ -151,6 +151,7 @@
     background-color: #6f6f6f;
     color: #000000;
     text-align: center;
+    text-decoration: none;
   }
   .footer a:link {
     color: #DDDDDD;
@@ -164,6 +165,7 @@
     color: #AAAAAA;
     text-decoration: none;
   }
+
 
 
 
@@ -209,11 +211,56 @@
 
 
 
-<h1><center>Home Page</center></h1>
+<h1><center>Robin Kuhns</center></h1>
 
-<center><h4 style="color:#0F0F0F;font-family: Arial;font-size=20pt">Welcome to my website</h4></center>
+<center><p style="color:#0F0F0F;font-family: Arial;">Born and raised in the heart of Vermont</p></center>
 
-<center><p style="color:#0F0F0F;font-family: Arial;">I am currently teaching myself html, this page will be undergoing lots of changes, apologies for the inconvenience.</p></center>
+<div id="map"></div>
+<script>
+var map;
+function initMap() {
+
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 44.22, lng: -73.125},
+    zoom: 8
+  });
+
+  var marker = new google.maps.Marker({
+  position: {lat: 44.22, lng: -73.125},
+  map: map,
+  title: 'Home Sweet Home'
+  });
+
+
+
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEfrHieCBUE4fYdDb9Sd_xOqKmsvIi7iQ&callback=initMap"
+async defer></script>
+
+<center><p style="font-size: 7pt">I got 300 buckaroos in Google Maps API credit for my trial period, so you can bet your bottom dollar my website is gonna have a map on it.</p></center>
+
+
+<center><h3>A brief history</h3></center>
+
+<center><p style="color:#0F0F0F;font-family: Arial;">I grew up building forts in the woods, hacking together zombie computers, inventing things, and fixing cars with my Dad.</p></center>
+<center><p style="color:#0F0F0F;font-family: Arial;">In secondary school I took a double course load, pioneering personalized learning outside of the classroom and contrasting it with a traditional education in school. In the unique program that my school offered, I was able to study blacksmithing, advanced physics (Through MIT's opencourseware), robotics, and electrical engineering. This experience opened the doors to The Clarkson School, where my college experience was jump-started a year early.</p></center>
+<center><p style="color:#0F0F0F;font-family: Arial;">Clarkson University provided a solid foundation for computer engineering, which I built upon further at hackathons and other extracurriculars. In the summer of 2017, I took a cyber security research internship at Exception Technologies in Syracuse. This experience turned me on to the world of defense contracting and opened my eyes to the opportunities it presents.</p></center>
+
+<center><h3>Core Philosophies</h3></center>
+<center><li>Have a good sense of humor</li></center>
+<center><li>Be curious about everything</li></center>
+<center><li>Learn how to fix things, don't just buy a new one</li></center>
+<center><li>Ask lots of questions, but try to answer them yourself first</li></center>
+<center><li>Know how to use your brain</li></center>
+<center><li>To quote my favorite physics teacher, "Safety third"</li></center>
+<center><li>Poke things with a stick</li></center>
+<center><li>Laugh at yourself more than you laugh at others</li></center>
+
+
+<center><h3>My personalized learning experience</h3></center>
+<center><p>Mt. Abarah Union Middle and High School was able to provide a novel solution to learning inside and outside the classroom. With their philosophy that every student is different, and will respond to education differently, they forged the path towards a personalized learning experience. In order to receive graduation credit, students had to demonstrate proficiency in real world skills that they applied to their field of study. These skills were things like critical thinking, problem solving, collaboration, communication, self awareness, and global citizenship. To demonstrate competence, students were required to present their work to a panel of teachers and community members, who would make a determination on your progress. This excercise in public speaking replaced conventional exams, and encouraged students to document their work throughout the semester.</p></center>
+<br>
 
 <div class="footer">
   <center>
